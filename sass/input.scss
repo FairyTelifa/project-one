@@ -20,6 +20,7 @@ h1 {
   align-items: center;
   @include sm{
     width: 50%;
+    align-items: center;
   }
 }
 
@@ -30,6 +31,7 @@ header{
 .flex-container {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   @include sm{
     flex-direction: column;
     align-items: center;
@@ -46,7 +48,7 @@ header{
 img {
   width: 30%;
   @include sm{
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -59,7 +61,7 @@ img {
 	width: 350px;
 	float: left;
   @include sm{
-    width: 100px;
+    width: 90%;
   }
 }
 
@@ -67,13 +69,13 @@ img {
 .col2 {
 	width: 350px;
   @include sm{
-    width: 100px;
+    width: 90%;
   }
 }
 
 .col3 {
 	width: 350px;
   @include sm{
-    width: 100px;
+    width: 90%;
   }
 }
