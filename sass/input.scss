@@ -1,0 +1,67 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+h1 {
+  color: blue;
+  @include sm{
+    color: red;
+  }
+}
+
+.head_img {
+  width: 100%;
+  align-items: center;
+  @include sm{
+    width: 50%;
+  }
+}
+
+header{
+  background-color: black;
+}
+
+table{
+  width: 100%;
+}
+
+th{
+  width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+td{
+  width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  @include sm{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.text-container {
+  width: 50%;
+  @include sm{
+    width: 90%;
+  }
+}
+
+img {
+  width: 30%;
+  @include sm{
+    width: 90%;
+  }
+}
