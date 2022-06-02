@@ -27,22 +27,6 @@ header{
   background-color: black;
 }
 
-table{
-  width: 100%;
-}
-
-th{
-  width: 20%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-td{
-  width: 20%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 30px;
-}
-
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -63,5 +47,33 @@ img {
   width: 30%;
   @include sm{
     width: 90%;
+  }
+}
+
+.column {
+	float: left;
+	padding: 15px 10px;
+}
+
+.col1 {
+	width: 350px;
+	float: left;
+  @include sm{
+    width: 100px;
+  }
+}
+
+
+.col2 {
+	width: 350px;
+  @include sm{
+    width: 100px;
+  }
+}
+
+.col3 {
+	width: 350px;
+  @include sm{
+    width: 100px;
   }
 }
