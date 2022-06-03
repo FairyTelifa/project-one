@@ -9,18 +9,18 @@ $screen-sm-min: 576px;
 }
 
 h1 {
-  color: blue;
+  color: rgb(255, 0, 136);
   @include sm{
-    color: red;
+    color: #E30000;
   }
 }
 
 .head_img {
   width: 100%;
-  align-items: center;
+  align-content: center;
   @include sm{
     width: 50%;
-    align-items: center;
+    align-content: center;
   }
 }
 
@@ -32,6 +32,19 @@ header{
   display: flex;
   justify-content: space-around;
   text-align: center;
+  padding-bottom: 30px;
+  @include sm{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.flex-container1 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #0088A0;
   @include sm{
     flex-direction: column;
     align-items: center;
@@ -52,11 +65,6 @@ img {
   }
 }
 
-.column {
-	float: left;
-	padding: 15px 10px;
-}
-
 .col1 {
 	width: 350px;
 	float: left;
@@ -65,9 +73,9 @@ img {
   }
 }
 
-
 .col2 {
 	width: 350px;
+  float: left;
   @include sm{
     width: 90%;
   }
@@ -75,7 +83,35 @@ img {
 
 .col3 {
 	width: 350px;
+  float: left;
   @include sm{
     width: 90%;
   }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
