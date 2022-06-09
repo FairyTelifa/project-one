@@ -134,10 +134,23 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  @include sm{
+    list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+		align-content: center;
+  }
 }
 
 li {
   float: left;
+  @include sm{
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 li a {
