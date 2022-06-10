@@ -83,11 +83,25 @@ body {
 
 .text-container {
   width: 50%;
+  padding-top: 80px;
 }
 
 @media (max-width: 576px) {
   .text-container {
+    padding-top: 30px;
     width: 70%;
+  }
+}
+
+.text-container1 {
+  width: 50%;
+  padding-top: 100px;
+}
+
+@media (max-width: 576px) {
+  .text-container1 {
+    width: 70%;
+    padding-top: 80px;
   }
 }
 
@@ -97,7 +111,7 @@ img {
 
 @media (max-width: 576px) {
   img {
-    width: 50%;
+    width: 80%;
   }
 }
 

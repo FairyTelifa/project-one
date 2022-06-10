@@ -63,15 +63,26 @@ body{
 
 .text-container {
   width: 50%;
+  padding-top: 80px;
   @include sm{
+    padding-top: 30px;
     width: 70%;
+  }
+}
+
+.text-container1{
+  width: 50%;
+  padding-top: 100px;
+  @include sm{
+    width:70%;
+    padding-top: 80px;
   }
 }
 
 img {
   width: 30%;
   @include sm{
-    width: 50%;
+    width: 80%;
   }
 }
 
