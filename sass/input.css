@@ -32,7 +32,7 @@ header {
   background-color: black;
 }
 
-.flex-container {
+.creator-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,51 @@ header {
 }
 
 @media (max-width: 576px) {
-  .flex-container {
+  .creator-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .feature-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -58,7 +102,7 @@ body {
   background-color: #ccc;
 }
 
-.flex-container1 {
+.contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +114,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  .flex-container1 {
+  .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

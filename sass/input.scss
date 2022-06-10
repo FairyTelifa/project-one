@@ -34,7 +34,29 @@ header{
   background-color: black;
 }
 
-.flex-container {
+.creator-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+  @include sm{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+  @include sm{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.feature-container {
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -49,7 +71,7 @@ body{
   background-color: #ccc;
 }
 
-.flex-container1 {
+.contact-container {
   display: flex;
   justify-content: space-around;
   text-align: center;
